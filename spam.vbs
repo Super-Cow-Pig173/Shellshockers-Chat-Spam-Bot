@@ -1,9 +1,7 @@
 Set wshShell = wscript.CreateObject("WScript.Shell") 
 
 Dim delay
-delay = InputBox("Delay in seconds", 1)
-delay = delay * 1000
-
+delay = InputBox("Max ping (If your ping is bigger than this number at any time, the bot will crash, 100 recommended)", 1)
 
 
 wscript.sleep 5000
