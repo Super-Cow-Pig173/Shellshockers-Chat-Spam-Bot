@@ -1,5 +1,7 @@
 Set wshShell = wscript.CreateObject("WScript.Shell") 
 
+IF InputBox("This bot works based on simulated key presses. Once it starts, you cannot stop it until it finishes, unless you somehow manage to kill wscript.exe in task manager with your keyboard spamming.") THEN
+
 Dim delay
 delay = InputBox("Max ping (If your ping is bigger than this number at any time, the bot will crash, 100 recommended)", "Max ping?", 1)
 
@@ -39,3 +41,5 @@ file.Close
 repeat = repeat - 1
 
 WEND
+
+END IF
